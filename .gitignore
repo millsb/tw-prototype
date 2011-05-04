@@ -2,3 +2,6 @@
 /.DS_Store
 /.sass-cache/
 /.vagrant
+thin.pid
+/log/thin.log
+/tmp/pids/thin.pid
