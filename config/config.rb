@@ -13,7 +13,8 @@ end
 http_path = "/"
 http_images_path = "/images"
 http_stylesheets_path = "/css"
-sass_dir = File.join 'view', "sass"
+css_dir = "public/css"
+sass_dir = File.join 'views', "sass"
 images_dir = File.join 'public', 'images'
 javascripts_dir = File.join 'public', 'js'
 
