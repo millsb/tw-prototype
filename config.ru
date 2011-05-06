@@ -1,3 +1,4 @@
-require './app.rb'
+require 'rubygems'
+require 'middleman'
 
-run Sinatra::Application
+run Middleman::Server

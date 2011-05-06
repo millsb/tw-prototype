@@ -5,3 +5,8 @@
 thin.pid
 /log/thin.log
 /tmp/pids/thin.pid
+.swp
+*.swp
+build/*.*/*
+/vendor/.DS_Store
+/build/

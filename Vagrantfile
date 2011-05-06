@@ -20,7 +20,7 @@ Vagrant::Config.run do |config|
   # Forward a port from the guest to the host, which allows for outside
   # computers to access the VM, whereas host only networking does not.
   config.vm.forward_port "http", 80, 8080
-  config.vm.forward_port "thin", 3000, 3030
+  config.vm.forward_port "sinatra", 4567, 4567
 
   # Share an additional folder to the guest VM. The first argument is
   # an identifier, the second is the path on the guest to mount the
@@ -50,7 +50,7 @@ Vagrant::Config.run do |config|
   # to this Vagrantfile), and adding some recipes and/or roles.
   #
    config.vm.provision :chef_solo do |chef|
-     chef.cookbooks_path = "config/cookbooks"
+     chef.cookbooks_path = "cookbooks"
      chef.add_recipe "vagrant_main"
   #   chef.add_recipe "mysql"
   #   chef.add_role "web"
